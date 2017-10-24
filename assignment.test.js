@@ -1,15 +1,15 @@
 const index = require('./index');
 
-describe('add' , () => {
-  test('add', () => {
-    expect(index.add(1,0)).toBe(1);
+describe('add function' , () => {
+  test('add 1 + 1', () => {
+    expect(index.add(1,1)).toBe(2);
   });
 
-  test('add', () => {
+  test('add null + 1', () => {
     expect(index.add(null,1)).toBe(1);
   });
 
-  test('add', () => {
+  test('add empty', () => {
     expect(index.add()).toBeNaN();
   });
 });
