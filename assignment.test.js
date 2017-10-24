@@ -13,3 +13,20 @@ describe('add function' , () => {
     expect(index.add()).toBeNaN();
   });
 });
+
+/*
+var automock = require('automock');
+
+automock.setStubCreator(jasmine.createSpy);
+
+var index2 = automock.require('./index.js');
+
+describe('throw function' , () => {
+  test('throw not throw', () => {
+    index2.doIt();
+
+    expect(index2.throws()).toBeNull();
+
+  });
+});
+*/
