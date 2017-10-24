@@ -30,3 +30,17 @@ describe('throw function' , () => {
   });
 });
 */
+
+describe('loop function', () => {
+  test('loop 0', () => {
+    expect(index.loop(0)).toBe(0);
+  });
+
+  test('loop 2', () => {
+    expect(index.loop(2)).toBe(6);
+  });
+
+  test('loop 420', () => {
+    expect(index.loop(420)).toBe(352380);
+  });
+});
